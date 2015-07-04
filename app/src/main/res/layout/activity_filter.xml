@@ -68,7 +68,7 @@
                     android:textSize="18sp" />
 
                 <Spinner
-                    android:id="@+id/spinnerMode"
+                    android:id="@+id/spinnerYear"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_weight="7"
@@ -99,7 +99,7 @@
                     android:textSize="18sp" />
 
                 <Spinner
-                    android:id="@+id/spinnerYear"
+                    android:id="@+id/spinnerArea"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="3dp"
@@ -129,7 +129,7 @@
                     android:textSize="18sp" />
 
                 <Spinner
-                    android:id="@+id/spinnerNumQuestion"
+                    android:id="@+id/spinnerCant"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_weight="7"
