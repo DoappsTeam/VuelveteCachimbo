@@ -5,7 +5,7 @@
     <string name="action_settings">Settings</string>
 
 
-    <!-- Filter ACtivity -->
+    <!-- Filter Activity -->
     <string name="simulacro">SIMULACRO</string>
     <string name="aleatorio">ALEATORIO</string>
     <string name="year">Año</string>
@@ -13,6 +13,15 @@
     <string name="cant">Cantidad</string>
     <string name="enable_clock">Activar Cronómetro</string>
     <string name="start">Iniciar</string>
+    
+    <!-- Univestity Activity -->
+    <string name="label_unmsms">UNMSM</string>
+    <string name="labe_uni">UNI</string>
+    <string name="label_unac">UNAC</string>
+    <string name="label_pucp">PUCP</string>
+
+    <!-- Main Activity -->
+    <string name="default_question">Cuantifique los hiatos y diptongos del enunciado La hidalguía de Mateo cautivó a los estudiantes del aula número seis.</string>
 
     <!---->
     <string name="nav_item_preference">Preferencias</string>

@@ -12,7 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import me.doapps.vuelvetecachimbo.fragment.DrawerFragment;
-import me.doapps.vuelvetecahimbo.R;
+import me.doapps.vuelvetecachimbo.R;
 
 
 public class MainActivity extends ActionBarActivity implements DrawerFragment.DrawerFragmentListener{

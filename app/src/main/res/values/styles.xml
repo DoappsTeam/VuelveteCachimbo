@@ -9,8 +9,8 @@
         <!-- Customize your theme here. -->
         <item name="android:windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
-        <item name="colorPrimary">@color/turquoise</item>
-        <item name="colorPrimaryDark">@color/greensea</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary</item>
         <item name="colorAccent">@color/carrot</item>
         <item name="android:windowBackground">@color/white</item>
     </style>

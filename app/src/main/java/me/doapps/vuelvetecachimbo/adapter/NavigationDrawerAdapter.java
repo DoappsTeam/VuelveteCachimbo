@@ -12,7 +12,7 @@ import java.util.Collections;
 import java.util.List;
 
 import me.doapps.vuelvetecachimbo.model.NavDrawerItem;
-import me.doapps.vuelvetecahimbo.R;
+import me.doapps.vuelvetecachimbo.R;
 
 /**
  * Created by doapps on 7/4/15.

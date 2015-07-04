@@ -14,4 +14,8 @@
 
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
+
+    <!-- Offical Colors -->
+    <color name="primary">#215A6D</color>
+    <color name="button">#EB6841</color>
 </resources>

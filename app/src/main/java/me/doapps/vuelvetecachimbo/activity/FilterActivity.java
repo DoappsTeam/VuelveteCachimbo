@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import me.doapps.vuelvetecahimbo.R;
+import me.doapps.vuelvetecachimbo.R;
 
 /**
  * Created by doapps on 7/4/15.
@@ -41,7 +41,7 @@ public class FilterActivity extends ActionBarActivity{
         btnTest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(FilterActivity.this, ResultActivity.class));
+                startActivity(new Intent(FilterActivity.this, MainActivity.class));
             }
         });
     }

@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBarActivity;
 
-import me.doapps.vuelvetecahimbo.R;
+import me.doapps.vuelvetecachimbo.R;
 
 /**
  * Created by doapps on 7/4/15.

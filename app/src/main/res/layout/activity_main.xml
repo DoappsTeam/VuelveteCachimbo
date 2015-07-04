@@ -22,11 +22,45 @@
                 layout="@layout/toolbar" />
         </LinearLayout>
 
-        <FrameLayout
+        <RelativeLayout
             android:id="@+id/container_body"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
-            android:layout_weight="1" />
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/greensea"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="@string/default_question"/>
+
+            </LinearLayout>
+
+            <com.shamanland.fab.FloatingActionButton
+                android:id="@+id/fab_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_social_share"
+                app:floatingActionButtonColor="@drawable/fab_color"
+                app:floatingActionButtonSize="normal"
+                android:layout_marginRight="31dp"
+                android:layout_gravity="right|top"
+                android:layout_marginEnd="31dp"
+                android:layout_marginTop="114dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
 
 
     </LinearLayout>
