@@ -18,4 +18,5 @@
     <!-- Offical Colors -->
     <color name="primary">#215A6D</color>
     <color name="button">#EB6841</color>
+    <color name="background">#DFECE6</color>
 </resources>

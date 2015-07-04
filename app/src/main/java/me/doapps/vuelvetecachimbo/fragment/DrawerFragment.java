@@ -59,7 +59,6 @@ public class DrawerFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_navigation_drawer, container, false);
 
         recyclerView = (RecyclerView) view.findViewById(R.id.drawerList);
-        textUserName = (TextView) view.findViewById(R.id.textUserName);
         //textUserName.setTypeface(FontUtil.setProximaNovaReg(getActivity()));
 
         adapter = new NavigationDrawerAdapter(getActivity(), getData());

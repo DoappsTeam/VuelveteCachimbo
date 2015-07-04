@@ -1,5 +1,6 @@
 package me.doapps.vuelvetecachimbo.activity;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -10,17 +11,20 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import me.doapps.vuelvetecachimbo.fragment.DrawerFragment;
 import me.doapps.vuelvetecachimbo.R;
 
 
-public class MainActivity extends ActionBarActivity implements DrawerFragment.DrawerFragmentListener{
+public class MainActivity extends ActionBarActivity implements DrawerFragment.DrawerFragmentListener, View.OnClickListener {
 
     public static String TAG = MainActivity.class.getSimpleName();
 
     private Toolbar toolbar;
     private DrawerFragment drawerFragment;
+
+    private Button btnEnd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +42,9 @@ public class MainActivity extends ActionBarActivity implements DrawerFragment.Dr
 
         // display the first navigation drawer view on app launch
         displayView(0);
+
+        btnEnd = (Button) findViewById(R.id.btnEnd);
+        btnEnd.setOnClickListener(this);
     }
 
     @Override
@@ -98,5 +105,10 @@ public class MainActivity extends ActionBarActivity implements DrawerFragment.Dr
             // set the toolbar title
             getSupportActionBar().setTitle(title);
         }
+    }
+
+    @Override
+    public void onClick(View view) {
+        startActivity(new Intent(MainActivity.this, ResultActivity.class));
     }
 }

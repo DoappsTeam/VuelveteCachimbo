@@ -3,6 +3,7 @@ package me.doapps.vuelvetecachimbo.activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.Entry;
@@ -18,12 +19,16 @@ import me.doapps.vuelvetecachimbo.R;
  */
 public class ResultActivity extends ActionBarActivity {
     private PieChart pieChart;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        setSupportActionBar(toolbar);
         pieChart = (PieChart) findViewById(R.id.pieChart);
 
         /*definimos algunos atributos*/

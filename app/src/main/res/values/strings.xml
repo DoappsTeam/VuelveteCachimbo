@@ -19,17 +19,22 @@
     <string name="labe_uni">UNI</string>
     <string name="label_unac">UNAC</string>
     <string name="label_pucp">PUCP</string>
+    
+    <!-- Main Activity -->
+    <string name="next">SIGUIENTE</string>
+    <string name="pass">PASAR</string>
+
 
     <!-- Main Activity -->
     <string name="default_question">Cuantifique los hiatos y diptongos del enunciado La hidalguía de Mateo cautivó a los estudiantes del aula número seis.</string>
 
     <!---->
-    <string name="nav_item_preference">Preferencias</string>
-    <string name="nav_item_challenge">Retar personas</string>
-    <string name="nav_item_training">Entrenar</string>
-    <string name="nav_item_library">Biblioteca</string>
-    <string name="nav_item_messages">Mensajes</string>
-    <string name="nav_item_ranking">Ranking</string>
+    <string name="nav_item_preference">Albert Camus sostenía lo siguiente: Lo que más sorprende de esta obra es que los</string>
+    <string name="nav_item_challenge">Existe una clara relación entre autoestima y auto- concepto como componentes </string>
+    <string name="nav_item_training">Si reconocemos que la corrupción es el principal problema de convivencia que afecta a los peruanos y que está muy vinculada a la formación ciudadana deficiente, entonces, para eliminarla</string>
+    <string name="nav_item_library">Uno de los factores que influyó en los descu- brimientos geográficos a lo largo de las costas occidentales del África fue la</string>
+    <string name="nav_item_messages">Uno de los factores que influyó en los descu- brimientos geográficos a lo largo de las costas occidentales del África fue la</string>
+    <string name="nav_item_ranking">Uno de los factores que influyó en los descu- brimientos geográficos a lo largo de las costas occidentales del África fue la</string>
     <string-array name="nav_drawer_labels">
         <item>@string/nav_item_preference</item>
         <item>@string/nav_item_challenge</item>
