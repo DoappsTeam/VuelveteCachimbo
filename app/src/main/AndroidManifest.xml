@@ -19,6 +19,7 @@
         <activity android:name="me.doapps.vuelvetecachimbo.activity.MainActivity"></activity>
         <activity android:name="me.doapps.vuelvetecachimbo.activity.UniversityActivity"></activity>
         <activity android:name="me.doapps.vuelvetecachimbo.activity.FilterActivity"></activity>
+        <activity android:name="me.doapps.vuelvetecachimbo.activity.ResultActivity"></activity>
     </application>
 
 </manifest>

@@ -41,7 +41,7 @@ public class FilterActivity extends ActionBarActivity{
         btnTest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(FilterActivity.this, MainActivity.class));
+                startActivity(new Intent(FilterActivity.this, ResultActivity.class));
             }
         });
     }
