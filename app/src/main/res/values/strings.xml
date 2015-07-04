@@ -8,7 +8,11 @@
     <!-- Filter ACtivity -->
     <string name="simulacro">SIMULACRO</string>
     <string name="aleatorio">ALEATORIO</string>
+    <string name="year">Año</string>
+    <string name="area">Área</string>
+    <string name="cant">Cantidad</string>
     <string name="enable_clock">Activar Cronómetro</string>
+    <string name="start">Iniciar</string>
 
     <!---->
     <string name="nav_item_preference">Preferencias</string>
