@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnTest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_type"
+            android:drawableLeft="@mipmap/ic_simulacro"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:text="@string/simulacro" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_type"
+            android:drawableLeft="@mipmap/ic_aleatorio"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:text="@string/aleatorio" />
+    </LinearLayout>
+
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enable_clock"
+        android:id="@+id/checkBox" />
+
+
+</LinearLayout>

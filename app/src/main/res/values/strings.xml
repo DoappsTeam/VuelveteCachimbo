@@ -1,6 +1,39 @@
 <resources>
-    <string name="app_name">VuelveteCahimbo</string>
+    <string name="app_name">VuelveteCachimbo</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+
+    <!-- Filter ACtivity -->
+    <string name="simulacro">SIMULACRO</string>
+    <string name="aleatorio">ALEATORIO</string>
+    <string name="enable_clock">Activar Cronómetro</string>
+
+    <!---->
+    <string name="nav_item_preference">Preferencias</string>
+    <string name="nav_item_challenge">Retar personas</string>
+    <string name="nav_item_training">Entrenar</string>
+    <string name="nav_item_library">Biblioteca</string>
+    <string name="nav_item_messages">Mensajes</string>
+    <string name="nav_item_ranking">Ranking</string>
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_preference</item>
+        <item>@string/nav_item_challenge</item>
+        <item>@string/nav_item_training</item>
+        <item>@string/nav_item_library</item>
+        <item>@string/nav_item_messages</item>
+        <item>@string/nav_item_ranking</item>
+    </string-array>
+    <string-array name="nav_drawer_icons">
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/ic_launcher</item>
+    </string-array>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
 </resources>
