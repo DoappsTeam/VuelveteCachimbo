@@ -38,18 +38,21 @@ public class ResultActivity extends ActionBarActivity {
 
 		/*creamos una lista para los valores Y*/
         ArrayList<Entry> valsY = new ArrayList<Entry>();
-        valsY.add(new Entry(5* 100 / 25,0));
-        valsY.add(new Entry(20 * 100 / 25,1));
+        valsY.add(new Entry(5* 100 / 45,0));
+        valsY.add(new Entry(20 * 100 / 45,1));
+        valsY.add(new Entry(20 * 100 / 45,1));
 
  		/*creamos una lista para los valores X*/
         ArrayList<String> valsX = new ArrayList<String>();
-        valsX.add("Varones");
-        valsX.add("Mujeres");
+        valsX.add("Correcta");
+        valsX.add("Icorrecta");
+        valsX.add("No respondidas");
 
  		/*creamos una lista de colores*/
         ArrayList<Integer> colors = new ArrayList<Integer>();
         colors.add(getResources().getColor(R.color.greensea));
         colors.add(getResources().getColor(R.color.carrot));
+        colors.add(getResources().getColor(R.color.primary));
 
  		/*seteamos los valores de Y y los colores*/
         PieDataSet set1 = new PieDataSet(valsY, "Resultados");

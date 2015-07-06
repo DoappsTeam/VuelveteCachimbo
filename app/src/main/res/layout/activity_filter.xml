@@ -40,11 +40,12 @@
                 android:text="@string/simulacro" />
 
             <Button
+                android:id="@+id/btnRandom"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/selector_type_white"
-                android:drawableLeft="@mipmap/ic_aleatorio_select"
+                android:drawableLeft="@mipmap/ic_aleatorio"
                 android:padding="10dp"
                 android:layout_margin="5dp"
                 android:textColor="@color/primary"
@@ -60,6 +61,7 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/linearYear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -91,6 +93,8 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/linearArea"
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -121,6 +125,8 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/linearCant"
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -162,23 +168,24 @@
                 android:layout_height="110dp"
                 android:src="@mipmap/student" />
 
-            <Button
-                android:layout_weight="1"
-                android:id="@+id/buttonStart"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/selector_type"
-                android:padding="10dp"
-                android:text="@string/start"
-                android:textSize="22sp"
-                android:textAllCaps="true"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:textColor="@color/white" />
-
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/buttonStart"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/selector_type"
+        android:padding="10dp"
+        android:text="@string/start"
+        android:textSize="22sp"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal|bottom"
+        android:textColor="@color/white" />
 
 </FrameLayout>

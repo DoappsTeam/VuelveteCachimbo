@@ -4,6 +4,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <!-- Splash Activity -->
+    <string name="splash_title">Vuélvete Cachimbo!</string>
 
     <!-- Filter Activity -->
     <string name="simulacro">SIMULACRO</string>
@@ -24,9 +26,15 @@
     <string name="next">SIGUIENTE</string>
     <string name="pass">PASAR</string>
 
+    <!-- Result Activity -->
+    <string name="new_test">Nuevo Examen</string>
+    <string name="good">Correctas :</string>
+    <string name="bad">Incorrectas :</string>
+    <string name="none">No contestadas :</string>
+
 
     <!-- Main Activity -->
-    <string name="default_question">Cuantifique los hiatos y diptongos del enunciado La hidalguía de Mateo cautivó a los estudiantes del aula número seis.</string>
+    <string name="default_question">#1 Cuantifique los hiatos y diptongos del enunciado La hidalguía de Mateo cautivó a los estudiantes del aula número seis.</string>
 
     <!---->
     <string name="nav_item_preference">Albert Camus sostenía lo siguiente: Lo que más sorprende de esta obra es que los</string>

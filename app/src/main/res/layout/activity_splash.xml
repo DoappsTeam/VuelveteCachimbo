@@ -11,11 +11,21 @@
         android:src="@mipmap/ic_launcher"
         android:layout_gravity="center" />
 
-    <ProgressBar
+
+    <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/progressBar"
-        android:layout_marginBottom="20dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/student"
         android:layout_gravity="center_horizontal|bottom" />
+
+    <TextView
+        android:id="@+id/textSplash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="@string/splash_title"
+        android:layout_gravity="center_horizontal|top" />
 
 </FrameLayout>

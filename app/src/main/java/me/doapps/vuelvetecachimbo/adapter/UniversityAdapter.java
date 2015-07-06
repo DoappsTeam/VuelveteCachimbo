@@ -52,7 +52,7 @@ public class UniversityAdapter extends BaseAdapter {
             holder = new Holder();
 
             holder.name = (TextView) view.findViewById(R.id.name);
-            holder.name.setTypeface(FontUtil.setPacifico(context));
+            holder.name.setTypeface(FontUtil.setVarsity(context));
             holder.logo = (ImageView) view.findViewById(R.id.logo);
             holder.logo.setImageResource(university.getImage());
             view.setTag(holder);

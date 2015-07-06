@@ -13,6 +13,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.shamanland.fab.FloatingActionButton;
+
 import me.doapps.vuelvetecachimbo.fragment.DrawerFragment;
 import me.doapps.vuelvetecachimbo.R;
 
@@ -25,6 +27,7 @@ public class MainActivity extends ActionBarActivity implements DrawerFragment.Dr
     private DrawerFragment drawerFragment;
 
     private Button btnEnd;
+    private FloatingActionButton fabShare;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +48,9 @@ public class MainActivity extends ActionBarActivity implements DrawerFragment.Dr
 
         btnEnd = (Button) findViewById(R.id.btnEnd);
         btnEnd.setOnClickListener(this);
+
+        fabShare = (FloatingActionButton) findViewById(R.id.fabShare);
+        fabShare.setOnClickListener(this);
     }
 
     @Override
@@ -109,6 +115,22 @@ public class MainActivity extends ActionBarActivity implements DrawerFragment.Dr
 
     @Override
     public void onClick(View view) {
-        startActivity(new Intent(MainActivity.this, ResultActivity.class));
+        switch (view.getId()){
+            case R.id.fabShare:
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                String sAux = "\nTe invito a descargar esta aplicación:\n\n";
+                sAux = sAux + "https://play.google.com/store/apps/details?id="+getApplicationContext().getPackageName()+"&hl=es\n\n";
+                intent.putExtra(Intent.EXTRA_TEXT, sAux);
+                startActivity(Intent.createChooser(intent, "Compartir"));
+                break;
+            case R.id.btnEnd:
+                startActivity(new Intent(MainActivity.this, ResultActivity.class));
+                break;
+
+        }
+
+
     }
 }

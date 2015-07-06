@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background">
 
 
     <LinearLayout
@@ -41,13 +42,13 @@
                     android:padding="5dp"
                     android:gravity="center"
                     android:textColor="@color/white"
-                    android:textSize="15sp"
+                    android:textSize="16sp"
                     android:text="@string/default_question" />
 
             </LinearLayout>
 
             <com.shamanland.fab.FloatingActionButton
-                android:id="@+id/fab_share"
+                android:id="@+id/fabShare"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_social_share"
@@ -61,73 +62,87 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true" />
 
-            <RadioGroup
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="fill_parent"
-                android:layout_below="@+id/linearLayout"
-                android:gravity="left"
-                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
                 android:layout_centerHorizontal="true">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tres hiatos y tres diptongos"
-                    android:id="@+id/radioButton"
-                    android:layout_gravity="left" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tres hiatos y dos diptongos"
-                    android:id="@+id/radioButton1"
-                    android:layout_gravity="left" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Dos hiatos y cuatro diptongos"
-                    android:id="@+id/radioButton2"
-                    android:layout_gravity="left" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tres hiatos y un diptongo"
-                    android:id="@+id/radioButton3"
-                    android:layout_gravity="left" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Un hiato y cuatro diptongos"
-                    android:id="@+id/radioButton4"
-                    android:layout_gravity="left" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:layout_margin="5dp"
-                        android:text="@string/pass"
-                        android:textColor="@color/white"
-                        android:background="@drawable/selector_type"/>
+                    android:orientation="vertical">
 
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="5dp"
-                        android:layout_weight="1"
-                        android:text="@string/pass"
-                        android:textColor="@color/white"
-                        android:background="@drawable/selector_type"/>
-                    </LinearLayout>
-            </RadioGroup>
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/linearLayout"
+                        android:gravity="left"
+                        android:layout_marginTop="10dp">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tres hiatos y tres diptongos"
+                            android:id="@+id/radioButton"
+                            android:layout_gravity="left" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tres hiatos y dos diptongos"
+                            android:id="@+id/radioButton1"
+                            android:layout_gravity="left" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dos hiatos y cuatro diptongos"
+                            android:id="@+id/radioButton2"
+                            android:layout_gravity="left" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tres hiatos y un diptongo"
+                            android:id="@+id/radioButton3"
+                            android:layout_gravity="left" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Un hiato y cuatro diptongos"
+                            android:id="@+id/radioButton4"
+                            android:layout_gravity="left" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:text="@string/pass"
+                                android:textColor="@color/white"
+                                android:background="@drawable/selector_type" />
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:text="@string/next"
+                                android:textColor="@color/white"
+                                android:background="@drawable/selector_type" />
+                        </LinearLayout>
+                    </RadioGroup>
+                </LinearLayout>
+            </ScrollView>
+
 
         </RelativeLayout>
     </LinearLayout>

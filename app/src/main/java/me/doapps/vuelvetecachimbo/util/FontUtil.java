@@ -8,7 +8,7 @@ import android.graphics.Typeface;
  */
 public class FontUtil {
 
-    public static Typeface setPacifico(Context context){
+    public static Typeface setVarsity(Context context){
         return Typeface.createFromAsset(context.getAssets(), "fonts/varsity_regular.ttf");
     }
 
